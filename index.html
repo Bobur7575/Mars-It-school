@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mars IT</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        /* Custom styles to match the image's specific blue gradient */
+        .bg-gradient-blue {
+            background: linear-gradient(to right, blue, blue); /* Adjust these colors if needed */
+        }
+        .text-gradient-orange {
+            background: linear-gradient(to right, #ff4500, #ffa500); /* Example orange gradient */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .border-gradient-orange {
+            border-image: linear-gradient(to right, #ff4500, #ffa500) 1;
+            border-style: solid;
+            border-width: 2px; /* Adjust as needed */
+        }
+        .shadow-custom-orange {
+            box-shadow: 0 0 15px rgba(255, 165, 0, 0.7); /* Custom glow for buttons/elements */
+        }
+        /* Custom styles for the progress bars */
+        .progress-bar-container {
+            background-color: #e0e0e0;
+            border-radius: 9999px; /* Full rounded corners */
+            height: 8px; /* Height of the progress bar */
+            overflow: hidden;
+        }
+        .progress-bar-fill-orange {
+            background-image: linear-gradient(to right, #f97316, #fbbf24); /* Orange gradient */
+            height: 100%;
+            border-radius: 9999px; /* Full rounded corners */
+        }
+    </style>
+</head>
+<body class="font-sans bg-blue-500">
+
+    <div class="min-h-screen bg-blue-500 text-white overflow-hidden">
+        <header class="flex flex-col md:flex-row items-center justify-between p-4 px-4 md:px-8 bg-blue-950 shadow-lg" data-aos="fade-down">
+            <div class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8 mb-4 md:mb-0">
+                <div class="flex items-center">
+                    <img src="download.png" alt="Mars Logo" class="h-8 mr-2"> <span class="text-xl font-bold">MARS</span>
+                </div>
+                <div class="text-xs text-gray-400 text-center md:text-left">
+                    12 yoshdan 18 <br> yoshgacha bo'lgan <br> bolalar uchun eng <br> katta kompyuter <br> kurslari markazi
+                </div>
+            </div>
+            <nav class="hidden md:flex space-x-6 text-sm mb-4 md:mb-0">
+                <a href="#" class="hover:text-blue-300">Kurslar</a>
+                <a href="#" class="hover:text-blue-300">Markazimiz haqida</a>
+                <a href="#" class="hover:text-blue-300">Shaharlar</a>
+                <a href="#" class="hover:text-blue-300">O'quvchilar</a>
+                <a href="#" class="hover:text-blue-300">O'qituvchilar</a>
+                <a href="#" class="hover:text-blue-300">Filiallar</a>
+            </nav>
+            <div class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4">
+                <div class="text-right">
+                    <div class="text-xl font-bold">+998 78 777 77 57</div>
+                    <div class="text-xs text-gray-400">Har kuni soat 9:00 dan <br> 20:00 gacha</div>
+                </div>
+                <div class="relative">
+                    <select class="bg-blue-900 text-white p-1 rounded text-sm focus:outline-none">
+                        <option>UZ</option>
+                        <option>RU</option>
+                    </select>
+                </div>
+            </div>
+            <button class="md:hidden text-white focus:outline-none absolute top-4 right-4">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </header>
+
+        <main class="relative flex flex-col md:flex-row items-center justify-center pt-8 md:pt-16 pb-8 px-4 md:px-0">
+            <div class="md:w-1/2 flex flex-col items-center md:items-start space-y-4 md:space-y-8 p-4 z-10 text-center md:text-left">
+                <div class="flex flex-wrap justify-center md:justify-start space-x-2 md:space-x-4">
+                    <span class="bg-blue-700 text-white px-3 py-1 rounded-full text-xs md:text-sm mb-2" data-aos="fade-right" data-aos-delay="100">#fullstack</span>
+                    <span class="bg-blue-700 text-white px-3 py-1 rounded-full text-xs md:text-sm mb-2" data-aos="fade-right" data-aos-delay="200">#dasturlash</span>
+                    <span class="bg-blue-700 text-white px-3 py-1 rounded-full text-xs md:text-sm mb-2" data-aos="fade-right" data-aos-delay="300">#frontend</span>
+                    <span class="bg-blue-700 text-white px-3 py-1 rounded-full text-xs md:text-sm mb-2" data-aos="fade-right" data-aos-delay="400">#backend</span>
+                </div>
+                <h1 class="text-3xl md:text-5xl font-bold leading-tight" data-aos="fade-right" data-aos-delay="500">
+                    Farzandingizni o'yinlardan <br> chalg'itib, unga IT <br> mutaxassisi bo'lish <br> imkoniyatini bering
+                </h1>
+                <div class="flex flex-col sm:flex-row items-center sm:space-x-3 text-sm md:text-lg" data-aos="fade-right" data-aos-delay="600">
+                    <img src="" class="🧑‍🤝‍🧑" alt="" class="h-6 w-6"> <span>12 yoshdan 18 yoshgacha</span>
+                    <span>bo'lgan bolalar uchun</span>
+                    <span class="font-semibold">kompyuter kurslari</span>
+                </div>
+                <button class="bg-gradient-to-r from-orange-600 to-yellow-500 text-white font-bold py-3 px-6 md:py-4 md:px-8 rounded-xl text-base md:text-lg uppercase tracking-wider shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 ease-in-out" data-aos="fade-up" data-aos-delay="700">
+                    SINOV DARSIGA YOZILISH UCHUN <br> <span class="font-normal text-sm">SHOSHILING</span>
+                </button>
+            </div>
+
+            <div class="md:w-1/2 relative flex items-center justify-center p-4 mt-8 md:mt-0">
+                <img src="main_ph_mrs_1.png.webp" alt="Person with PS VR on head" class="w-full max-w-sm md:max-w-lg object-contain rounded-xl" data-aos="zoom-in" data-aos-delay="200">
+
+                <img src="https://img.icons8.com/ios-filled/100/ffffff/rocket.png" alt="Rocket" class="absolute top-0 md:top-10 right-0 w-16 h-16 md:w-24 md:h-24 transform rotate-45 -translate-x-1/2 -translate-y-1/2 z-20" data-aos="fade-left" data-aos-delay="800">
+
+                <div class="absolute bottom-4 left-4 md:bottom-4 md:right-4 bg-white text-gray-800 p-3 md:p-4 rounded-lg shadow-2xl flex items-center space-x-2 md:space-x-4 max-w-[90%] md:max-w-md" data-aos="fade-up" data-aos-delay="900">
+                    <div class="flex -space-x-1 md:-space-x-2 overflow-hidden">
+                        <img class="inline-block h-8 w-8 md:h-10 md:w-10 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1491528323818-fdd1fdd6b6ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="Student 1">
+                        <img class="inline-block h-8 w-8 md:h-10 md:w-10 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="Student 2">
+                        <img class="inline-block h-8 w-8 md:h-10 md:w-10 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="Student 3">
+                        <img class="inline-block h-8 w-8 md:h-10 md:w-10 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="Student 4">
+                    </div>
+                    <p class="text-xs md:text-sm">Hozirda «Mars IT»da <br> <span class="font-bold">1.800 dan ortiq</span> o'quvchi <br> ta'lim olmoqda</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div class="bg-blue-600 h-48 w-full relative overflow-hidden flex items-end justify-center">
+        <div class="absolute bottom-0 w-full h-full bg-cover bg-center bg-no-repeat opacity-20" style="background-image: url('https://via.placeholder.com/1200x400/0000FF/FFFFFF?text=Background+Blur+Effect');">
+        </div>
+
+        <div class="relative z-10 -mb-24 flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-8 px-4">
+            <div class="bg-white rounded-lg shadow-xl p-6 text-center w-full md:w-80 flex flex-col items-center" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-xl font-bold text-gray-800 mb-2">Haqiqiy loyihalar</h3>
+                <p class="text-gray-600 mb-4">bo'yicha trening va amaliyot</p>
+                <div class="w-full progress-bar-container">
+                    <div class="progress-bar-fill-orange" style="width: 33%;"></div>
+                </div>
+                <span class="text-gray-500 text-xs mt-1">33%</span>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-xl p-6 text-center w-full md:w-80 flex flex-col items-center" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="text-xl font-bold text-gray-800 mb-2">O'zini noldan <span class="text-orange-500">talab qilinadigan kasblarda</span> sinab ko'radi</h3>
+                <p class="text-gray-600 mb-4"></p>
+                <div class="w-full progress-bar-container">
+                    <div class="progress-bar-fill-orange" style="width: 66%;"></div>
+                </div>
+                <span class="text-gray-500 text-xs mt-1">66%</span>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-xl p-6 text-center w-full md:w-80 flex flex-col items-center" data-aos="fade-up" data-aos-delay="300">
+                <h3 class="text-xl font-bold text-gray-800 mb-2">Sinov darsi davomida <span class="text-orange-500">birinchi loyihani</span> amalga oshiradi</h3>
+                <p class="text-gray-600 mb-4"></p>
+                <div class="w-full progress-bar-container">
+                    <div class="progress-bar-fill-orange" style="width: 100%;"></div>
+                </div>
+                <span class="text-gray-500 text-xs mt-1">100%</span>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-gray-100 pt-32 pb-16 px-4 flex flex-col items-center text-center">
+        <h2 class="text-2xl md:text-4xl font-bold text-gray-800 mb-8 max-w-2xl leading-snug" data-aos="fade-up">
+            «Mars IT»da o'qish kimlar uchun mos keladi?
+        </h2>
+        <p class="text-gray-600 text-base md:text-lg max-w-3xl leading-relaxed" data-aos="fade-up" data-aos-delay="100">
+            Darslar 8 yoshdan 18 yoshgacha barcha bolalar uchun, ayniqsa <br class="hidden md:block"> kompyuter o'yinlaridan chalg'imaydigan va dasturlash olamiga <br class="hidden md:block"> qiziqadiganlar uchun.
+        </p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // global duration for animations
+            once: true,    // whether animation should happen only once - while scrolling down
+        });
+    </script>
+</body>
+</html>
